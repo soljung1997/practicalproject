@@ -1,0 +1,107 @@
+<!--Text, radio, checkbox, select, date, textarea-->
+
+<!--text input-->
+<form>
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname">
+</form>
+<!--radio-->
+<form>
+    <p>Choose your favorite Web Language: </p>
+    <input type="radio" id="python" name="fav_language" value="python">
+    <label for="python">Python</label><br>
+    <input type="radio" id="c" name="fav_language" value="C">
+    <label for="c">C</label><br>
+    <input type="radio" id="java" name="fav_language" value="Java">
+    <label for="java">Java</label><br>
+</form>
+<!--checkboxes-->
+<form>
+    <p>Check all favorite foods</p>
+    <input type="checkbox" id="ham" name="fav_foods1" value="Ham">
+    <label for="ham">Ham</label><br>
+    <input type="checkbox" id="pineapple" name="fav_foods2" value="Pineapple">
+    <label for="pineapple">Pineapple</label><br>
+    <input type="checkbox" id="ginger" name="fav_foods3" value="Ginger">
+    <label for="ginger">Ginger</label>
+
+</form>
+
+<!--select-->
+<form>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="honda">Honda</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="ferrari">Ferrari</option>
+    </select>
+</form>
+
+<!--date-->
+<form>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+
+</form>
+
+<!--textarea-->
+<form>
+    <textarea name="message" rows="10" cols="30">
+The cat was playing in Handong.
+    </textarea>
+</form>
+
+
+<!--fieldset, legend, optgroup, color, datalist-->
+
+<!--fieldset, legend-->
+
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="submit">
+    </fieldset>
+</form>
+
+<!--optgroup-->
+<form>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="volkswagen">Volkswagen</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+</form>
+<!--color-->
+<h1 style="background-color:DodgerBlue;">Hello world</h1>
+<p style="background-color:Tomato;">Lorem Ipsum</p>
+
+<!--datalist-->
+
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers" id="browser">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">  
+</datalist>
